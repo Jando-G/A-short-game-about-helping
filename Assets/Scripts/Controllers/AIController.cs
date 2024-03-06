@@ -2,16 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "AIController", menuName = "InputController/AIController")]
-public class AIController : InputController
+namespace Controls
 {
-     public override bool RetrieveJumpInput()
+     [CreateAssetMenu(fileName = "AIController", menuName = "InputController/AIController")]
+     public class AIController : InputController
      {
-          return true;
-     }
+          public override bool RetrieveJumpHoldInput()
+          {
+               return false;
+          }
 
-     public override float RetrieveMoveInput()
-     {
-          return 1f;
+          public override bool RetrieveJumpInput()
+          {
+               return true;
+          }
+
+          public override float RetrieveMoveInput()
+          {
+               return 1f;
+          }
+
+          public override bool RetrieveStompInput()
+          {
+               return false;
+          }
      }
 }
+

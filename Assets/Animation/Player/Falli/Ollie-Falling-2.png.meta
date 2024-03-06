@@ -103,10 +103,10 @@ TextureImporter:
       name: Ollie-Falling-2_0
       rect:
         serializedVersion: 2
-        x: 9
+        x: 7
         y: 0
-        width: 19
-        height: 32
+        width: 20
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

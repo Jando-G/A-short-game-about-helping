@@ -11,7 +11,19 @@ Day 2 - Feb 29/ Mar 1
 
 Day 3 - Mar 1/2
 	
-	Made my own dirt and character with animations
+	Made my own dirt and character with animations.
 
-Assets used: 
-Sunny Land by Ansimuz
+Day 4 - Mar 2/3
+
+	Did second part of 2d movement tutorial for walljumping. Cleaned up player animations. 
+
+Day 5 - Mar 4/5
+	
+	Added brick tiles.
+
+Day 6 - Mar 5/6
+	
+	Added ground pound. Made Bricks destroyable. 
+
+Assets Used:
+	
