@@ -1,12 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
+using Controls;
 using UnityEngine;
 
 namespace Controls
 {
      [CreateAssetMenu(fileName = "AIController", menuName = "InputController/AIController")]
+
      public class AIController : InputController
      {
+
           public override bool RetrieveJumpHoldInput()
           {
                return false;
@@ -14,12 +15,12 @@ namespace Controls
 
           public override bool RetrieveJumpInput()
           {
-               return true;
+               return false;
           }
 
           public override float RetrieveMoveInput()
           {
-               return 1f;
+               return 0;
           }
 
           public override bool RetrieveStompInput()

@@ -13,6 +13,9 @@ namespace Controls
           [SerializeField, Range(0f, 0.3f)] private float coyoteTime = .2f;
           [SerializeField, Range(0f, 0.3f)] private float jumpBufferTime = .2f;
 
+          AudioSource audioSource;
+          public AudioClip jumpSound;
+
           private Controller controller;
           private Rigidbody2D body;
           private CollisionDataReciever collisionData;
@@ -29,6 +32,7 @@ namespace Controls
                body = GetComponent<Rigidbody2D>();
                collisionData = GetComponent<CollisionDataReciever>();
                controller = GetComponent<Controller>();
+               audioSource = GetComponent<AudioSource>();
           }
           private void Update()
           {
@@ -93,6 +97,7 @@ namespace Controls
                     {
                          jumpSpeed = Mathf.Max(jumpSpeed - velocity.y, 0f);
                     }
+                    audioSource.PlayOneShot(jumpSound, 0.1f);
                     velocity.y += jumpSpeed;
                }
           }

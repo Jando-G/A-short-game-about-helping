@@ -20,6 +20,9 @@ namespace Controls
           private Rigidbody2D body;
           private Controller controler;
 
+          AudioSource audioSource;
+          public AudioClip jumpSound;
+
           private Vector2 velocity;
 
           private float wallDirectionX;
@@ -32,6 +35,7 @@ namespace Controls
                collisionDataReciever = GetComponent<CollisionDataReciever>();
                body = GetComponent<Rigidbody2D>();
                controler  = GetComponent<Controller>();
+               audioSource = GetComponent<AudioSource>();
           }
 
           private void Update()
@@ -67,18 +71,21 @@ namespace Controls
                {
                     if(-wallDirectionX == controler.input.RetrieveMoveInput())
                     {
+                         audioSource.PlayOneShot(jumpSound, 0.1f);
                          velocity = new Vector2(wallJumpClimb.x * wallDirectionX, wallJumpClimb.y);
                          WallJumping = true;
                          desiredJump = false;
                     }
                     else if (controler.input.RetrieveMoveInput() == 0)
                     {
+                         audioSource.PlayOneShot(jumpSound, 0.1f);
                          velocity = new Vector2(wallJumpBounce.x * wallDirectionX, wallJumpBounce.y);
                          WallJumping = true;
                          desiredJump = false;
                     }
                     else
                     {
+                         audioSource.PlayOneShot(jumpSound, 0.1f);
                          velocity = new Vector2(wallJumpLeap.x * wallDirectionX, wallJumpLeap.y);
                          WallJumping = true;
                          desiredJump = false;
