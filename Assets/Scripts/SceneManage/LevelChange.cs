@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelChange : MonoBehaviour
 {
-     [SerializeField, Range(0,1)] int sceneNum = 0;
+     [SerializeField] int sceneNum = 0;
   
      private void OnTriggerEnter2D(Collider2D other)
      {

@@ -11,7 +11,6 @@ namespace Controls
           private Rigidbody2D body;
           private CollisionDataReciever collisionData;
           private Tilemap tilemap;
-          private ScoreCounter scoreCounter;
           private AudioSource audioSource;
 
           [SerializeField] TileBase brickTile;
@@ -34,7 +33,6 @@ namespace Controls
                body = GetComponent<Rigidbody2D>();
                collisionData = GetComponent<CollisionDataReciever>();
                controller = GetComponent<Controller>();
-               scoreCounter = GetComponent<ScoreCounter>();
                audioSource = GetComponent<AudioSource>();
                tilemap = FindFirstObjectByType<Tilemap>();
           }
@@ -116,7 +114,6 @@ namespace Controls
                tilemap.SetTile(tile, null);
                GameObject particle = Instantiate(breakEffect, transform.position , Quaternion.identity);
                Destroy(particle, 2);
-               scoreCounter.IncreaseScore(1);
                audioSource.PlayOneShot(crush, 0.5F);
                audioSource.pitch += pitchStep;
                pitchTimer = pitchResetTime;

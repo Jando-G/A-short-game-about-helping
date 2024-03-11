@@ -29,10 +29,20 @@ Day 6 - Mar 5/6
 Day 7 (halfway point) - Mar 6/7
 
 	Scene management, uploaded prototype to itchio, new brick type, minor bug fixes, added slime
+
+Day 8 - Mar 8/9
+	
+	Created first and only encounter
+
+Day 9 - Mar 10/11
+
+	Created start screen
+
+
 --------------------------------------------------------------------------------------------------------------
 
 Assets Used:
 
-	Song : Daystar - Sunny side up / • ✨샛별 - 이런 계란후라이🍳✨(Royalty Free Music)  
+	Song : Chillpeach - In Dreamland : https://www.youtube.com/watch?v=DSWYAclv2I8
 
 	Font: Pixeled by OmegaPC777

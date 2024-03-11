@@ -7749,6 +7749,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hong
       objectReference: {fileID: 0}
+    - target: {fileID: 4653823587402531123, guid: 6974db98e4d03924d8afbd7427e1fea0, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8126817175587613331, guid: 6974db98e4d03924d8afbd7427e1fea0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.65395
@@ -7890,7 +7894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d7625899a70d949ba0a951ead16c69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNum: 1
+  sceneNum: 2
 --- !u!1001 &793892118440249343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7947,8 +7951,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6137641609848897442, guid: b98ad3297c8943a449f7d0048e47a12f, type: 3}
+      propertyPath: m_Volume
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2517195989680616439, guid: b98ad3297c8943a449f7d0048e47a12f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b98ad3297c8943a449f7d0048e47a12f, type: 3}

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2035347999250949921}
   - component: {fileID: 852438400012365358}
   - component: {fileID: 4461178135428431827}
+  - component: {fileID: 2484315955012860700}
   - component: {fileID: 2452569275415046326}
   - component: {fileID: 7234016130874114593}
   - component: {fileID: 881906326345646723}
@@ -148,7 +149,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.44}
+  m_Offset: {x: 0, y: 0.47}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -158,8 +159,51 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.25, y: 0.85}
+  m_Size: {x: 1.25, y: 0.82}
   m_EdgeRadius: 0
+--- !u!68 &2484315955012860700
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2417466516973921173}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.45}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.62, y: 0.46875}
+  - {x: 0.62, y: 0.46875}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!114 &2452569275415046326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,7 +256,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 2
-  jumpHeight: 5
+  jumpHeightMax: 5
+  jumpTimerMin: 3
+  jumpTimerMax: 10
   jumpSound: {fileID: 8300000, guid: f43b196b55bbc614fbc3c853aae9035c, type: 3}
 --- !u!82 &4653823587402531123
 AudioSource:
