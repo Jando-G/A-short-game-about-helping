@@ -24,9 +24,9 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 3
+  m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: e4553d046fb68f04eb04d63cccc4789b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.42522737, g: 0.28855285, b: 0.39785546, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 8f316a6d918597a42b831deba4f02de5, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4101802354700541700, guid: c336aa575459a9f44b2ac5550b27f0bc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2722e76dbb6f42e46b51f8864ef3fc89, type: 2}
     - target: {fileID: 4742333635019831355, guid: c336aa575459a9f44b2ac5550b27f0bc, type: 3}
       propertyPath: m_Name
       value: Sign
@@ -247,7 +251,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 2722e76dbb6f42e46b51f8864ef3fc89, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3348,6 +3352,63 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!1001 &740873419
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 119343348382472941, guid: f5ca906bc2ccd9046ab2341c060377fe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 119343348382472941, guid: f5ca906bc2ccd9046ab2341c060377fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 119343348382472941, guid: f5ca906bc2ccd9046ab2341c060377fe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 119343348382472941, guid: f5ca906bc2ccd9046ab2341c060377fe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.95562065
+      objectReference: {fileID: 0}
+    - target: {fileID: 119343348382472941, guid: f5ca906bc2ccd9046ab2341c060377fe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.23404457
+      objectReference: {fileID: 0}
+    - target: {fileID: 119343348382472941, guid: f5ca906bc2ccd9046ab2341c060377fe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.17831519
+      objectReference: {fileID: 0}
+    - target: {fileID: 119343348382472941, guid: f5ca906bc2ccd9046ab2341c060377fe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.014702292
+      objectReference: {fileID: 0}
+    - target: {fileID: 119343348382472941, guid: f5ca906bc2ccd9046ab2341c060377fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 26.236
+      objectReference: {fileID: 0}
+    - target: {fileID: 119343348382472941, guid: f5ca906bc2ccd9046ab2341c060377fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 22.806
+      objectReference: {fileID: 0}
+    - target: {fileID: 119343348382472941, guid: f5ca906bc2ccd9046ab2341c060377fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 7.145
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935967205325209134, guid: f5ca906bc2ccd9046ab2341c060377fe, type: 3}
+      propertyPath: m_Name
+      value: Directional Light
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f5ca906bc2ccd9046ab2341c060377fe, type: 3}
 --- !u!1 &745075424
 GameObject:
   m_ObjectHideFlags: 0
@@ -4333,6 +4394,10 @@ PrefabInstance:
       propertyPath: signText
       value: 
       objectReference: {fileID: 89771070}
+    - target: {fileID: 6365825215393667904, guid: 240c2d124b4ae3641a58e0ea359646b2, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2722e76dbb6f42e46b51f8864ef3fc89, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4355,3 +4420,4 @@ SceneRoots:
   - {fileID: 1419522044}
   - {fileID: 1107962229}
   - {fileID: 951114276}
+  - {fileID: 740873419}

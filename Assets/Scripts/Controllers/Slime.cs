@@ -89,7 +89,5 @@ public class Slime : MonoBehaviour
      public void SetMega()
      {
           megaSlime = true;
-          jumpHeightMax *= 2;
-          jumpHeightMax *= 2;
      }
 }
