@@ -113,7 +113,7 @@ public class JackyDialogue : MonoBehaviour
                StopAllCoroutines();
                dialogueText.text = "";
                transform.Rotate(0f, 0f, 90f);
-               transform.position = new Vector3(5.8f, -14.71f, 0f);
+               transform.position = new Vector3(126.7f, -53f, 0f);
                BGM.Play();
                signText.text = "You tried your best.";
                state += 1;

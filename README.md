@@ -1,4 +1,4 @@
-# Normal Quest
+# A short game about helping
 
 My entry for the 2024 Acerola Game Jam 0
 
@@ -22,11 +22,11 @@ Day 5 - Mar 4/5
 	
 	Added brick tiles.
 
-Day 6 - Mar 5/6
+Day 6 - Mar 5/6 (halfway point)
 	
 	Made Bricks destroyable. Added ground stomp, BGM and sfx.
 
-Day 7 (halfway point) - Mar 6/7
+Day 7 - Mar 6/7
 
 	Scene management, uploaded prototype to itchio, new brick type, minor bug fixes, added slime
 
@@ -36,8 +36,15 @@ Day 8 - Mar 8/9
 
 Day 9 - Mar 10/11
 
-	Created start screen
+	Created start screen, end credits, rain
 
+Day 10 - Mar 11/12
+
+	cleaning up + fixing bugs
+
+Day 11 - Mar 12/13 (last day)
+
+	add clouds, can now torture slime
 
 --------------------------------------------------------------------------------------------------------------
 

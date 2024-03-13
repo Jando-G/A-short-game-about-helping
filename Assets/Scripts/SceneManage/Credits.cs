@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-using System;
+using UnityEngine.SceneManagement;
 
 public class Credits : MonoBehaviour
 {
@@ -34,6 +34,16 @@ public class Credits : MonoBehaviour
 
                if (i + 1 < textElements.Length)
                     i++;
+               else {
+                    yield return new WaitForSeconds(2f);
+                    yield return FadeOut(textElements[i]);
+                    SaveMe[] dontDestroyObjects = FindObjectsByType<SaveMe>(FindObjectsSortMode.None);
+                    foreach (SaveMe saveMe in dontDestroyObjects)
+                    {
+                         Destroy(saveMe.gameObject);
+                    }
+                    SceneManager.LoadScene(0);
+               }
           }
      }
 

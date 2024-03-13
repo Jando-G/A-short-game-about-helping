@@ -44,8 +44,6 @@ namespace Controls
           private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
           {
                tilemap = FindFirstObjectByType<Tilemap>();
-               transform.position = Vector3.zero;
-               
           }
           
           private void Update()
